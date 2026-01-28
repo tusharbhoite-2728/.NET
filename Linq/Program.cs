@@ -17,7 +17,12 @@ IEnumerable<Student> students =
     new Student("Eugene",  "Zabokritski", 121, [96, 85, 91, 60]),
     new Student("Michael", "Tucker",      122, [94, 92, 91, 91])
 ];
+
+var list = students.ToList();
+Console.WriteLine(list[10]);
+Console.WriteLine(list[0].Scores[0]);
 Console.WriteLine(System.Environment.NewLine);
+
 
 Console.WriteLine("================================================================================");
 Console.WriteLine("================================================================================");
@@ -27,6 +32,24 @@ IEnumerable<Student> studentQuery =
     where student.Scores[0] > 90 && student.Scores[3] < 80
     select student;
 
+
+// full name (first + last name) score[0] == 97
+string FullName = string.Empty;
+
+var query =
+    from student in students
+    where student.Scores[0] == 97
+    select $"{student.First} {student.Last}";
+
+foreach(string Q in query)
+{
+    Console.WriteLine(Q);
+}
+
+Console.WriteLine();
+
+Console.WriteLine("================================================================================");
+Console.WriteLine("================================================================================");
 
 
 foreach (Student student in studentQuery)
@@ -87,3 +110,15 @@ foreach (int i in numQuery2)
 }
 
 Console.WriteLine();
+Console.WriteLine("================================================================================");
+Console.WriteLine("================================================================================");
+
+List<int> numbers1 = [5, 4, 1, 3, 9, 8, 6, 7, 2, 0];
+List<int> numbers2 = [15, 14, 11, 13, 19, 18, 16, 17, 12, 10];
+
+double average = numbers1.Average();
+
+IEnumerable<int> concatenationQuery = numbers1.Concat(numbers2);
+
+Console.WriteLine($"Average : {average}");
+

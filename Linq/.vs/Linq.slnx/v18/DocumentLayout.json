@@ -3,16 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Admin\\Desktop\\.NET\\Linq\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9F1FBAD8-AA71-44E0-9707-9E628F8BE427}|Linq.csproj|c:\\users\\admin\\desktop\\.net\\linq\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9F1FBAD8-AA71-44E0-9707-9E628F8BE427}|Linq.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7779D3AF-FB41-BDEF-0F08-EFD3793BC043}|Linq.csproj|c:\\users\\admin\\desktop\\.net\\linq\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7779D3AF-FB41-BDEF-0F08-EFD3793BC043}|Linq.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9F1FBAD8-AA71-44E0-9707-9E628F8BE427}|Linq.csproj|c:\\users\\admin\\desktop\\.net\\linq\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9F1FBAD8-AA71-44E0-9707-9E628F8BE427}|Linq.csproj|solutionrelative:student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9F1FBAD8-AA71-44E0-9707-9E628F8BE427}|Linq.csproj|c:\\users\\admin\\desktop\\.net\\linq\\linq.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{9F1FBAD8-AA71-44E0-9707-9E628F8BE427}|Linq.csproj|solutionrelative:linq.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{7779D3AF-FB41-BDEF-0F08-EFD3793BC043}|Linq.csproj|c:\\users\\admin\\desktop\\.net\\linq\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7779D3AF-FB41-BDEF-0F08-EFD3793BC043}|Linq.csproj|solutionrelative:student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -51,26 +47,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Linq",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\.NET\\Linq\\Linq.csproj",
-              "RelativeDocumentMoniker": "Linq.csproj",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\.NET\\Linq\\Linq.csproj",
-              "RelativeToolTip": "Linq.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-01-28T08:42:04.771Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\.NET\\Linq\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\Admin\\Desktop\\.NET\\Linq\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAwwCUAAAASAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAADQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-28T06:00:17.752Z",
               "EditorCaption": ""
