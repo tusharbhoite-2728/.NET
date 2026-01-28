@@ -1,0 +1,97 @@
+{
+  "version": 2,
+  "dgSpecHash": "pZuZmkw4Cnw=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Admin\\Desktop\\.NET\\RemotevalidationDemo\\RemotevalidationDemo.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Admin\\.nuget\\packages\\jquery\\1.8.0\\jquery.1.8.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\jquery.validation\\1.8.0.1\\jquery.validation.1.8.0.1.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.jquery.unobtrusive.validation\\4.0.0\\microsoft.jquery.unobtrusive.validation.4.0.0.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1902",
+      "level": "Warning",
+      "message": "Package 'jQuery' 1.8.0 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-2pqj-h3vj-pqgw",
+      "projectPath": "C:\\Users\\Admin\\Desktop\\.NET\\RemotevalidationDemo\\RemotevalidationDemo.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\Admin\\Desktop\\.NET\\RemotevalidationDemo\\RemotevalidationDemo.csproj",
+      "libraryId": "jQuery",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    },
+    {
+      "code": "NU1902",
+      "level": "Warning",
+      "message": "Package 'jQuery' 1.8.0 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-6c3j-c64m-qhgq",
+      "projectPath": "C:\\Users\\Admin\\Desktop\\.NET\\RemotevalidationDemo\\RemotevalidationDemo.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\Admin\\Desktop\\.NET\\RemotevalidationDemo\\RemotevalidationDemo.csproj",
+      "libraryId": "jQuery",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    },
+    {
+      "code": "NU1902",
+      "level": "Warning",
+      "message": "Package 'jQuery' 1.8.0 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-gxr4-xjj5-5px2",
+      "projectPath": "C:\\Users\\Admin\\Desktop\\.NET\\RemotevalidationDemo\\RemotevalidationDemo.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\Admin\\Desktop\\.NET\\RemotevalidationDemo\\RemotevalidationDemo.csproj",
+      "libraryId": "jQuery",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    },
+    {
+      "code": "NU1902",
+      "level": "Warning",
+      "message": "Package 'jQuery' 1.8.0 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-jpcq-cgw6-v4j6",
+      "projectPath": "C:\\Users\\Admin\\Desktop\\.NET\\RemotevalidationDemo\\RemotevalidationDemo.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\Admin\\Desktop\\.NET\\RemotevalidationDemo\\RemotevalidationDemo.csproj",
+      "libraryId": "jQuery",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    },
+    {
+      "code": "NU1902",
+      "level": "Warning",
+      "message": "Package 'jQuery' 1.8.0 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-q4m3-2j7h-f7xw",
+      "projectPath": "C:\\Users\\Admin\\Desktop\\.NET\\RemotevalidationDemo\\RemotevalidationDemo.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\Admin\\Desktop\\.NET\\RemotevalidationDemo\\RemotevalidationDemo.csproj",
+      "libraryId": "jQuery",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    },
+    {
+      "code": "NU1902",
+      "level": "Warning",
+      "message": "Package 'jQuery' 1.8.0 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-rmxg-73gg-4p98",
+      "projectPath": "C:\\Users\\Admin\\Desktop\\.NET\\RemotevalidationDemo\\RemotevalidationDemo.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\Admin\\Desktop\\.NET\\RemotevalidationDemo\\RemotevalidationDemo.csproj",
+      "libraryId": "jQuery",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    },
+    {
+      "code": "NU1903",
+      "level": "Warning",
+      "message": "Package 'jQuery.Validation' 1.8.0.1 has a known high severity vulnerability, https://github.com/advisories/GHSA-jxwx-85vp-gvwm",
+      "projectPath": "C:\\Users\\Admin\\Desktop\\.NET\\RemotevalidationDemo\\RemotevalidationDemo.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\Admin\\Desktop\\.NET\\RemotevalidationDemo\\RemotevalidationDemo.csproj",
+      "libraryId": "jQuery.Validation",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    }
+  ]
+}

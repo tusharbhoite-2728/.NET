@@ -1,0 +1,133 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Admin\\Desktop\\.NET\\ProductManagement\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EC267C07-FFF4-163E-B2E0-A33ADB099F94}|ProductManagement\\ProductManagement.csproj|c:\\users\\admin\\desktop\\.net\\productmanagement\\productmanagement\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC267C07-FFF4-163E-B2E0-A33ADB099F94}|ProductManagement\\ProductManagement.csproj|solutionrelative:productmanagement\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC267C07-FFF4-163E-B2E0-A33ADB099F94}|ProductManagement\\ProductManagement.csproj|c:\\users\\admin\\desktop\\.net\\productmanagement\\productmanagement\\views\\product\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EC267C07-FFF4-163E-B2E0-A33ADB099F94}|ProductManagement\\ProductManagement.csproj|solutionrelative:productmanagement\\views\\product\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC267C07-FFF4-163E-B2E0-A33ADB099F94}|ProductManagement\\ProductManagement.csproj|c:\\users\\admin\\desktop\\.net\\productmanagement\\productmanagement\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EC267C07-FFF4-163E-B2E0-A33ADB099F94}|ProductManagement\\ProductManagement.csproj|solutionrelative:productmanagement\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC267C07-FFF4-163E-B2E0-A33ADB099F94}|ProductManagement\\ProductManagement.csproj|c:\\users\\admin\\desktop\\.net\\productmanagement\\productmanagement\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC267C07-FFF4-163E-B2E0-A33ADB099F94}|ProductManagement\\ProductManagement.csproj|solutionrelative:productmanagement\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC267C07-FFF4-163E-B2E0-A33ADB099F94}|ProductManagement\\ProductManagement.csproj|c:\\users\\admin\\desktop\\.net\\productmanagement\\productmanagement\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC267C07-FFF4-163E-B2E0-A33ADB099F94}|ProductManagement\\ProductManagement.csproj|solutionrelative:productmanagement\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC267C07-FFF4-163E-B2E0-A33ADB099F94}|ProductManagement\\ProductManagement.csproj|c:\\users\\admin\\desktop\\.net\\productmanagement\\productmanagement\\services\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC267C07-FFF4-163E-B2E0-A33ADB099F94}|ProductManagement\\ProductManagement.csproj|solutionrelative:productmanagement\\services\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC267C07-FFF4-163E-B2E0-A33ADB099F94}|ProductManagement\\ProductManagement.csproj|c:\\users\\admin\\desktop\\.net\\productmanagement\\productmanagement\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC267C07-FFF4-163E-B2E0-A33ADB099F94}|ProductManagement\\ProductManagement.csproj|solutionrelative:productmanagement\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\.NET\\ProductManagement\\ProductManagement\\Program.cs",
+              "RelativeDocumentMoniker": "ProductManagement\\Program.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\.NET\\ProductManagement\\ProductManagement\\Program.cs",
+              "RelativeToolTip": "ProductManagement\\Program.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAgwBoAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-08T09:14:03.48Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\.NET\\ProductManagement\\ProductManagement\\Views\\Product\\Details.cshtml",
+              "RelativeDocumentMoniker": "ProductManagement\\Views\\Product\\Details.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\.NET\\ProductManagement\\ProductManagement\\Views\\Product\\Details.cshtml",
+              "RelativeToolTip": "ProductManagement\\Views\\Product\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAiwCcAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-08T09:13:11.163Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\.NET\\ProductManagement\\ProductManagement\\Views\\Product\\Index.cshtml",
+              "RelativeDocumentMoniker": "ProductManagement\\Views\\Product\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\.NET\\ProductManagement\\ProductManagement\\Views\\Product\\Index.cshtml",
+              "RelativeToolTip": "ProductManagement\\Views\\Product\\Index.cshtml",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAiwDIAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-08T09:12:12.35Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\.NET\\ProductManagement\\ProductManagement\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "ProductManagement\\Controllers\\ProductController.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\.NET\\ProductManagement\\ProductManagement\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "ProductManagement\\Controllers\\ProductController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-08T09:09:54.477Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ProductService.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\.NET\\ProductManagement\\ProductManagement\\Services\\ProductService.cs",
+              "RelativeDocumentMoniker": "ProductManagement\\Services\\ProductService.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\.NET\\ProductManagement\\ProductManagement\\Services\\ProductService.cs",
+              "RelativeToolTip": "ProductManagement\\Services\\ProductService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-08T09:08:15.351Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IProductService.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\.NET\\ProductManagement\\ProductManagement\\Services\\IProductService.cs",
+              "RelativeDocumentMoniker": "ProductManagement\\Services\\IProductService.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\.NET\\ProductManagement\\ProductManagement\\Services\\IProductService.cs",
+              "RelativeToolTip": "ProductManagement\\Services\\IProductService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-08T09:06:52.048Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\.NET\\ProductManagement\\ProductManagement\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "ProductManagement\\Models\\Product.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\.NET\\ProductManagement\\ProductManagement\\Models\\Product.cs",
+              "RelativeToolTip": "ProductManagement\\Models\\Product.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-08T09:04:31.309Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "BAxUcSKErJE=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Admin\\Desktop\\.NET\\WebApplication1\\WebApplication1\\WebApplication1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Admin\\.nuget\\packages\\bootstrap\\5.3.8\\bootstrap.5.3.8.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\bootstrap.sass\\5.3.8\\bootstrap.sass.5.3.8.nupkg.sha512"
+  ],
+  "logs": []
+}

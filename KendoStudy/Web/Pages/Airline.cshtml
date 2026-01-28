@@ -1,0 +1,389 @@
+﻿@page
+@model AirlineModel
+@{
+    ViewData["Title"] = "Airline List";
+}
+
+<!-- ================= KENDO ================= -->
+<link href="https://kendo.cdn.telerik.com/themes/12.3.0/default/default-main.css" rel="stylesheet" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+
+<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+<script src="https://kendo.cdn.telerik.com/2025.4.1217/mjs/kendo.all.js" type="module"></script>
+
+
+<div class="k-content container-fluid mt-3">
+    <h3 class="mb-3">Airline Management</h3>
+
+    <!-- ADD AIRLINE BUTTON -->
+    <button id="addAirlineBtn" class="btn btn-outline-success btn-sm mb-3">
+        <i class="bi bi-plus-circle me-1"></i>
+        Add Airline
+    </button>
+
+    <!-- KENDO GRID -->
+    <div id="airlineGrid"></div>
+</div>
+
+<!-- ================= KENDO WINDOW ================= -->
+<div id="airlineWindow" style="display:none;">
+    <form id="airlineForm" class="p-4 border rounded bg-light">
+
+        <input type="hidden" name="AirlineMasterID" id="AirlineMasterID" />
+
+        <!-- Airline Code -->
+        <div class="mb-3">
+            <label for="AirlineCode" class="form-label fw-semibold">
+                Airline Code
+            </label>
+            <input id="AirlineCode" name="AirlineCode"
+                   class="form-control"
+                   placeholder="Enter Airline Code" />
+        </div>
+
+        <!-- Airline Name -->
+        <div class="mb-3">
+            <label for="AirlineName" class="form-label fw-semibold">
+                Airline Name
+            </label>
+            <input id="AirlineName" name="AirlineName"
+                   class="form-control"
+                   placeholder="Enter Airline Name" />
+        </div>
+
+        <!-- LPC -->
+        <div class="mb-3">
+            <label for="LPC" class="form-label fw-semibold">
+                LPC
+            </label>
+            <input id="LPC" name="LPC"
+                   class="form-control"
+                   placeholder="Enter LPC" />
+        </div>
+
+        <!-- Operational Status -->
+        <div class="mb-4">
+            <label for="IsOperational" class="form-label fw-semibold">
+                Operational Status
+            </label>
+            <select id="IsOperational" name="IsOperational"
+                    class="form-select">
+                <option value="">Select status</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="d-flex justify-content-end">
+            <button type="button" id="cancelBtn"
+                    class="btn btn-outline-secondary me-2">
+                Cancel
+            </button>
+
+            <button type="submit"
+                    class="btn btn-outline-success">
+                Save
+            </button>
+        </div>
+
+    </form>
+
+</div>
+
+<!-- ================= TOASTS ================= -->
+<div id="toastContainer"
+     style="position: fixed; bottom: 10px; right: 10px; z-index: 9999;">
+</div>
+
+<script>
+    let airlineGrid, airlineWindow;
+    let tooltips = new Map();
+    let isEditMode = false;
+
+    $(document).ready(function () {
+
+        // ================= KENDO GRID =================
+        airlineGrid = $("#airlineGrid").kendoGrid({
+            dataSource: {
+                transport: {
+                read: { url: "/api/mastersapi", dataType: "json" },
+                destroy: {
+                    url: function (data) { return `/api/mastersapi/${data.AirlineMasterID}`; },
+                    type: "DELETE"
+                }
+            },
+            schema: {
+                model: {
+                    id: "AirlineMasterID",
+                    fields: {
+                        AirlineMasterID: { editable: false },
+                        AirlineCode: { type: "string" },
+                        AirlineName: { type: "string" },
+                        LPC: { type: "string" },
+                        IsOperational: { type: "string" },
+                        LastChangedAt: { type: "date" }
+                    }
+                }
+            },
+            pageSize: 10
+        },
+        pageable: true,
+        sortable: true,
+        filterable: false,
+        height: 700,
+        columns: [
+            { field: "airlineMasterID", title: "ID", width: 70 },
+            { field: "airlineCode", title: "Code", width: 120 },
+            { field: "airlineName", title: "Name", width: 220 },
+            { field: "lpc", title: "LPC", width: 120 },
+            { field: "isOperational", title: "Operational", width: 140 },
+            {
+                field: "lastChangedAt",
+                title: "Last Changed",
+                width: 150,
+                format: "{0:MM/dd/yyyy}"
+            },
+            {
+                title: "Actions",
+                width: 180,
+                template: `
+                    <div class="btn-group btn-group-sm" role="group">
+                        <a class="btn btn-outline-primary me-1 edit-btn">
+                            <i class="bi bi-pencil-square me-1"></i>Edit
+                        </a>
+                        <a class="btn btn-outline-danger delete-btn">
+                            <i class="bi bi-trash me-1"></i>Delete
+                        </a>
+                    </div>`
+            }
+        ],
+        toolbar: ["excel", "pdf"],
+
+        pdf: {
+            fileName: "Airlines.pdf",
+            allPages: true,
+            avoidLinks: true,
+            paperSize: "A4",
+            margin: { top: "2cm", left: "1cm", right: "1cm", bottom: "2cm" },
+            landscape: false,
+            repeatHeaders: true,
+            scale: 0.8,
+            template: "<div style='text-align:center; font-size:16px; font-weight:bold; margin-bottom:10px;'>Airline Report</div>",
+            pageTemplate: "<div style='text-align:center; font-size:10px; margin-top:10px;'>Page #: pageNum # of #: totalPages #</div>",
+
+            export: function(e) {
+                e.promise.then(function(doc) {
+                    const body = doc.content[1].table.body;
+
+                  
+                    for (let r = 1; r < body.length; r++) {
+                        const rawDate = body[r][5].text; 
+                        const dateObj = new Date(rawDate);
+                        if (!isNaN(dateObj)) {
+                            body[r][5].text = kendo.toString(dateObj, "MM/dd/yyyy");
+                        }
+                    }
+                });
+            }
+        },
+
+        excel: {
+            fileName: "Airlines.xlsx",
+            filterable: true
+        }
+    }).data("kendoGrid");
+
+
+        // ================= KENDO WINDOW =================
+        airlineWindow = $("#airlineWindow").kendoWindow({
+            title: "Add Airline",
+            modal: true,
+            visible: false,
+            width: "450px",
+            resizable: false
+        }).data("kendoWindow");
+
+        // ================= BUTTON EVENTS =================
+        $("#addAirlineBtn").click(function () {
+            isEditMode = false;
+            $("#AirlineMasterID").val(0);
+            $("#airlineForm")[0].reset();
+            airlineWindow.title("Add Airline").center().open();
+            clearValidation();
+        });
+
+        $("#cancelBtn").click(function () {
+            airlineWindow.close();
+        });
+
+        // ================= GRID BUTTON EVENTS =================
+        $("#airlineGrid").on("click", ".edit-btn", function () {
+            let data = airlineGrid.dataItem($(this).closest("tr"));
+            isEditMode = true;
+
+            $("#AirlineMasterID").val(data.airlineMasterID);
+            $("#AirlineCode").val(data.airlineCode);
+            $("#AirlineName").val(data.airlineName);
+            $("#LPC").val(data.lpc);
+            $("#IsOperational").val(data.isOperational);
+
+            airlineWindow.title("Edit Airline").center().open();
+            clearValidation();
+        });
+
+        $("#airlineGrid").on("click", ".delete-btn", function () {
+            let data = airlineGrid.dataItem($(this).closest("tr"));
+            if (!confirm(" Are you sure to delete this airline?")) return;
+
+            $.ajax({
+                url: `/api/mastersapi/${data.airlineMasterID}`,
+                type: "DELETE",
+                success: function () {
+                    airlineGrid.dataSource.read();
+                    showToast("success", "Airline deleted successfully");
+                },
+                error: function () {
+                    showToast("error", "Error deleting airline");
+                }
+            });
+        });
+
+        // ================= FORM SUBMIT WITH VALIDATION =================
+        $("#airlineForm").submit(function (e) {
+            e.preventDefault();
+            clearValidation();
+
+            let AirlineMasterID = parseInt($("#AirlineMasterID").val());
+            let AirlineCode = $("#AirlineCode").val().trim();
+            let AirlineName = $("#AirlineName").val().trim();
+            let LPC = $("#LPC").val().trim();
+            let IsOperational = $("#IsOperational").val();
+
+            // ===== CLIENT-SIDE VALIDATION =====
+            let isValid = true;
+
+           
+            if (!AirlineCode.match(/^\d[A-Z]$/)) {
+                showTooltip($("#AirlineCode"), "Code must be a digit followed by an uppercase letter");
+                isValid = false;
+            }
+
+            if (!AirlineName.match(/^[A-Za-z\s]{1,15}$/)) {
+                showTooltip($("#AirlineName"), "Name must contain only letters, max 15 characters");
+                isValid = false;
+            }
+
+           
+            if (!LPC) {
+                showTooltip($("#LPC"), "LPC is required");
+                isValid = false;
+            }
+
+           
+            if (!IsOperational) {
+                showTooltip($("#IsOperational"), "Operational status is required");
+                isValid = false;
+            }
+
+            if (!isValid) return;
+
+            let payload = {
+                AirlineMasterID,
+                AirlineCode,
+                AirlineName,
+                LPC,
+                IsOperational,
+                LastChangedAt: new Date().toISOString()
+            };
+
+            $.ajax({
+                url: "/api/mastersapi",
+                type: isEditMode ? "PUT" : "POST",
+                contentType: "application/json",
+                data: JSON.stringify(payload),
+                success: function () {
+                    airlineWindow.close();
+                    airlineGrid.dataSource.read();
+                    showToast("success",
+                        isEditMode
+                            ? "Airline updated successfully"
+                            : "Airline added successfully"
+                    );
+                },
+                error: function (xhr) {
+                    clearValidation(); 
+
+                    if (xhr.responseJSON && xhr.responseJSON.errors) {
+                        let errors = xhr.responseJSON.errors; 
+
+           
+                        for (let field in errors) {
+                            if (errors.hasOwnProperty(field)) {
+                                let message = errors[field][0]; 
+                                let element = $(`#${field}`);
+                                if (element.length) {
+                                    showTooltip(element, message);
+                                } else {
+                       
+                                    showToast("error", message);
+                                }
+                            }
+                        }
+                        return;
+                    }
+
+      
+                    if (xhr.responseJSON?.message) {
+                        showToast("error", xhr.responseJSON.message);
+                        return;
+                    }
+                    if (xhr.responseText) {
+                        showToast("error", xhr.responseText);
+                    }
+                }
+
+            });
+        });
+
+        // ================= TOOLTIP =================
+        function showTooltip(element, message) {
+            let el = element[0];
+            el.classList.add("k-invalid");
+            let tooltip = new kendo.ui.Tooltip(el, {
+                content: message,
+                autoHide: true,
+                position: "top"
+            });
+            tooltip.show();
+            tooltips.set(el, tooltip);
+        }
+
+        function clearValidation() {
+            tooltips.forEach(t => t.destroy());
+            tooltips.clear();
+            $(".k-invalid").removeClass("k-invalid");
+        }
+
+        // ================= TOAST =================
+        function showToast(status, msg) {
+            let color = status === "success" ? "#4caf50" : "#f44336";
+            let toast = $(`
+                <div class="k-toast"
+                     style="background-color:${color};
+                            color:#fff;
+                            padding:8px 16px;
+                            margin-top:5px;
+                            border-radius:4px;">
+                    ${msg}
+                </div>
+            `);
+            $("#toastContainer").append(toast);
+            toast.fadeIn();
+            setTimeout(() => toast.fadeOut(() => toast.remove()), 3000);
+        }
+
+    });
+</script>
