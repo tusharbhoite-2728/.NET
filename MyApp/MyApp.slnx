@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="../DemoDLL/DemoDLL.csproj" Id="c3253858-92c1-4fa1-b4b2-ed7e8342e987" />
+  <Project Path="MyApp.csproj" />
+</Solution>

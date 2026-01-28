@@ -1,0 +1,274 @@
+﻿@model FlightMVC.Models.Flight
+@{
+    ViewData["Title"] = "Flight Management";
+    Layout = "_Layout";
+}
+
+<style>
+    .validation-tooltip .tooltip-inner {
+        background-color: #dc3545;
+        color: #fff;
+        font-size: 0.85rem;
+    }
+
+    .validation-tooltip.bs-tooltip-end .tooltip-arrow::before {
+        border-right-color: #dc3545;
+    }
+
+    .validation-tooltip.bs-tooltip-start .tooltip-arrow::before {
+        border-left-color: #dc3545;
+    }
+
+    .is-invalid {
+        border-color: #dc3545 !important;
+    }
+</style>
+
+<div class="container mt-4">
+    <h3 class="mb-3">Flight Management</h3>
+    <button class="btn btn-primary mb-3" onclick="openAddModal()">Add Flight</button>
+
+    <table class="table table-bordered" id="flightTable">
+        <thead class="table-dark">
+            <tr>
+                <th>Flight No</th>
+                <th>Airline</th>
+                <th>Date</th>
+                <th>Source</th>
+                <th>Destination</th>
+                <th>Type</th>
+                <th>Aircraft</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+</div>
+
+<!-- TOASTS -->
+<div class="toast-container position-fixed top-0 end-0 p-3">
+
+    <div id="createToast" class="toast text-bg-success border-0">
+        <div class="d-flex">
+            <div class="toast-body">Flight added successfully.</div>
+            <button class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
+        </div>
+    </div>
+
+    <div id="updateToast" class="toast text-bg-primary border-0">
+        <div class="d-flex">
+            <div class="toast-body">Flight updated successfully.</div>
+            <button class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
+        </div>
+    </div>
+
+    <div id="deleteToast" class="toast text-bg-danger border-0">
+        <div class="d-flex">
+            <div class="toast-body">Flight deleted successfully.</div>
+            <button class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
+        </div>
+    </div>
+
+    <!-- DUPLICATE / BUSINESS ERROR -->
+    <div id="errorToast" class="toast text-bg-danger border-0">
+        <div class="d-flex">
+            <div class="toast-body" id="errorToastBody"></div>
+            <button class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
+        </div>
+    </div>
+
+</div>
+
+<!-- MODAL -->
+<div class="modal fade" id="flightModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalTitle">Add Flight</h5>
+                <button class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+
+            <form id="flightForm">
+                <input type="hidden" asp-for="FlightId" id="FlightId" />
+
+                <div class="modal-body">
+                    <input asp-for="FlightNumber" class="form-control mb-2" placeholder="Flight Number" />
+                    <input asp-for="AirlineId" class="form-control mb-2" placeholder="Airline Id" />
+                    <input asp-for="DateOfTravel" type="date" class="form-control mb-2" />
+                    <input asp-for="Source" class="form-control mb-2" placeholder="Source" />
+                    <input asp-for="Destination" class="form-control mb-2" placeholder="Destination" />
+
+                    <select asp-for="Aircraft" class="form-control mb-2">
+                        <option value="">Select Aircraft</option>
+                        <option>Airbus</option>
+                        <option>Sukhoi</option>
+                        <option>Boeing</option>
+                    </select>
+
+                    <div id="intDomGroup" class="mb-2">
+                        <label class="me-3">
+                            <input type="radio" name="IntDom" value="International"> International
+                        </label>
+                        <label>
+                            <input type="radio" name="IntDom" value="Domestic"> Domestic
+                        </label>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-success">Save</button>
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        let flightModal;
+        let tooltips = new Map();
+
+        $(document).ready(function () {
+            flightModal = new bootstrap.Modal(document.getElementById('flightModal'));
+            loadFlights();
+        });
+
+        function showTooltip(element, message) {
+            let el = element[0];
+            if (!el || !message) return;
+
+            if (tooltips.has(el)) tooltips.get(el).dispose();
+
+            el.classList.add("is-invalid");
+            el.setAttribute("data-bs-title", message);
+            el.setAttribute("data-bs-custom-class", "validation-tooltip");
+
+            let tooltip = new bootstrap.Tooltip(el, { trigger: "manual" });
+            tooltip.show();
+            tooltips.set(el, tooltip);
+        }
+
+        function clearValidation() {
+            tooltips.forEach(t => t.dispose());
+            tooltips.clear();
+            $(".is-invalid").removeClass("is-invalid");
+        }
+
+        function openAddModal() {
+            $("#modalTitle").text("Add Flight");
+            $("#flightForm")[0].reset();
+            $("#FlightId").val(0);
+            clearValidation();
+            flightModal.show();
+        }
+
+        function loadFlights() {
+            $.get("/Flight/GetAll", function (data) {
+                let rows = "";
+                data.forEach(f => {
+                    rows += `<tr>
+                        <td>${f.flightNumber}</td>
+                        <td>${f.airlineId}</td>
+                        <td>${f.dateOfTravel.split('T')[0]}</td>
+                        <td>${f.source}</td>
+                        <td>${f.destination}</td>
+                        <td>${f.intDom}</td>
+                        <td>${f.aircraft}</td>
+                        <td>
+                            <button class="btn btn-warning btn-sm" onclick="editFlight(${f.flightId})">Edit</button>
+                            <button class="btn btn-danger btn-sm" onclick="deleteFlight(${f.flightId})">Delete</button>
+                        </td>
+                    </tr>`;
+                });
+                $("#flightTable tbody").html(rows);
+            });
+        }
+
+        function editFlight(id) {
+            $.get("/Flight/GetById?id=" + id, function (data) {
+                $("#modalTitle").text("Edit Flight");
+
+                $("#FlightId").val(data.flightId);
+                $("#FlightNumber").val(data.flightNumber);
+                $("#AirlineId").val(data.airlineId);
+                $("#DateOfTravel").val(data.dateOfTravel.split('T')[0]);
+                $("#Source").val(data.source);
+                $("#Destination").val(data.destination);
+                $("#Aircraft").val(data.aircraft);
+                $(`input[name="IntDom"][value="${data.intDom}"]`).prop("checked", true);
+
+                clearValidation();
+                flightModal.show();
+            });
+        }
+
+        function showToast(id) {
+            new bootstrap.Toast(document.getElementById(id), { delay: 3000 }).show();
+        }
+
+        function deleteFlight(id) {
+            if (!confirm("Delete this flight?")) return;
+            $.post("/Flight/Delete?id=" + id, function () {
+                loadFlights();
+                showToast("deleteToast");
+            });
+        }
+
+        $("#flightForm").submit(function (e) {
+            e.preventDefault();
+            clearValidation();
+
+            let isCreate = $("#FlightId").val() == 0;
+            let url = isCreate ? "/Flight/Create" : "/Flight/Edit";
+
+            $.ajax({
+                url: url,
+                type: "POST",
+                data: $(this).serialize(),
+                success: function () {
+                    flightModal.hide();
+                    loadFlights();
+                    showToast(isCreate ? "createToast" : "updateToast");
+                },
+                error: function (xhr) {
+
+                    // PLAIN STRING ERROR
+                    if (xhr.responseText && !xhr.responseJSON) {
+                        $("#errorToastBody").text(xhr.responseText);
+                        showToast("errorToast");
+                        return;
+                    }
+
+                    // JSON MESSAGE ERROR
+                    if (xhr.responseJSON?.message) {
+                        $("#errorToastBody").text(xhr.responseJSON.message);
+                        showToast("errorToast");
+                        return;
+                    }
+
+                    // MODELSTATE ERRORS
+                    let errors = xhr.responseJSON;
+                    if (!errors) return;
+
+                    for (let key in errors) {
+                        let message = Array.isArray(errors[key]) ? errors[key][0] : errors[key];
+                        if (!message) continue;
+
+                        let input = key === "IntDom"
+                            ? $("#intDomGroup")
+                            : $(`[name="${key}"]`);
+
+                        if (input.length > 0) {
+                            showTooltip(input, message);
+                        }
+                    }
+                }
+            });
+        });
+
+        $('#flightModal').on('hidden.bs.modal', clearValidation);
+    </script>
+}

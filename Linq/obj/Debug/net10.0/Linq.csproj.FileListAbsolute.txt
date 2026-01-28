@@ -1,0 +1,14 @@
+C:\Users\Admin\Desktop\.NET\Linq\bin\Debug\net10.0\Linq.exe
+C:\Users\Admin\Desktop\.NET\Linq\bin\Debug\net10.0\Linq.deps.json
+C:\Users\Admin\Desktop\.NET\Linq\bin\Debug\net10.0\Linq.runtimeconfig.json
+C:\Users\Admin\Desktop\.NET\Linq\bin\Debug\net10.0\Linq.dll
+C:\Users\Admin\Desktop\.NET\Linq\bin\Debug\net10.0\Linq.pdb
+C:\Users\Admin\Desktop\.NET\Linq\obj\Debug\net10.0\Linq.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Desktop\.NET\Linq\obj\Debug\net10.0\Linq.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\.NET\Linq\obj\Debug\net10.0\Linq.AssemblyInfo.cs
+C:\Users\Admin\Desktop\.NET\Linq\obj\Debug\net10.0\Linq.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\.NET\Linq\obj\Debug\net10.0\Linq.dll
+C:\Users\Admin\Desktop\.NET\Linq\obj\Debug\net10.0\refint\Linq.dll
+C:\Users\Admin\Desktop\.NET\Linq\obj\Debug\net10.0\Linq.pdb
+C:\Users\Admin\Desktop\.NET\Linq\obj\Debug\net10.0\Linq.genruntimeconfig.cache
+C:\Users\Admin\Desktop\.NET\Linq\obj\Debug\net10.0\ref\Linq.dll
