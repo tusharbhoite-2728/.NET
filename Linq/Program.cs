@@ -149,3 +149,6 @@ foreach (var item in m5)
 }
 
 
+// , separated string of flight id of delta airline.
+string result = string.Empty;
+result = new StudyQueries().GetReqFlight(flights);

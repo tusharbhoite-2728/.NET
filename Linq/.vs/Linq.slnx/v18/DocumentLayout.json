@@ -1,20 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Admin\\Desktop\\.NET\\Linq\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{7779D3AF-FB41-BDEF-0F08-EFD3793BC043}|Linq.csproj|c:\\users\\admin\\desktop\\.net\\linq\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7779D3AF-FB41-BDEF-0F08-EFD3793BC043}|Linq.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7779D3AF-FB41-BDEF-0F08-EFD3793BC043}|Linq.csproj|c:\\users\\admin\\desktop\\.net\\linq\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7779D3AF-FB41-BDEF-0F08-EFD3793BC043}|Linq.csproj|solutionrelative:student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0494FA92-528C-416B-A77D-A4D9D0A74A3E}|Solution Items{0494FA92-528C-416B-A77D-A4D9D0A74A3E}|C:\\Users\\Admin\\Desktop\\.NET\\Linq\\Flights.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0494FA92-528C-416B-A77D-A4D9D0A74A3E}|Solution Items{0494FA92-528C-416B-A77D-A4D9D0A74A3E}|solutionrelative:Flights.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -22,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -35,45 +22,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Flights.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\.NET\\Linq\\Flights.cs",
-              "RelativeDocumentMoniker": "Flights.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\.NET\\Linq\\Flights.cs",
-              "RelativeToolTip": "Flights.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAqwAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-29T05:54:32.406Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Student.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\.NET\\Linq\\Student.cs",
-              "RelativeDocumentMoniker": "Student.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\.NET\\Linq\\Student.cs",
-              "RelativeToolTip": "Student.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-28T08:42:28.646Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\.NET\\Linq\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\.NET\\Linq\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAFcAAAAAAAAAAAAAAGUAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-28T06:00:17.752Z",
-              "EditorCaption": ""
             }
           ]
         }
