@@ -1,124 +1,151 @@
 ﻿using Linq;
 
 
-IEnumerable<Student> students =
-[
-    new Student(First: "Svetlana", Last: "Omelchenko", ID: 111, Scores: [97, 92, 81, 60]),
-    new Student(First: "Claire",   Last: "O'Donnell",  ID: 112, Scores: [75, 84, 91, 39]),
-    new Student(First: "Sven",     Last: "Mortensen",  ID: 113, Scores: [88, 94, 65, 91]),
-    new Student(First: "Cesar",    Last: "Garcia",     ID: 114, Scores: [97, 89, 85, 82]),
-    new Student(First: "Debra",    Last: "Garcia",     ID: 115, Scores: [35, 72, 91, 70]),
-    new Student(First: "Fadi",     Last: "Fakhouri",   ID: 116, Scores: [99, 86, 90, 94]),
-    new Student(First: "Hanying",  Last: "Feng",       ID: 117, Scores: [93, 92, 80, 87]),
-    new Student(First: "Hugo",     Last: "Garcia",     ID: 118, Scores: [92, 90, 83, 78]),
-
-    new Student("Lance",   "Tucker",      119, [68, 79, 88, 92]),
-    new Student("Terry",   "Adams",       120, [99, 82, 81, 79]),
-    new Student("Eugene",  "Zabokritski", 121, [96, 85, 91, 60]),
-    new Student("Michael", "Tucker",      122, [94, 92, 91, 91])
-];
-
-var list = students.ToList();
-Console.WriteLine(list[10]);
-Console.WriteLine(list[0].Scores[0]);
-Console.WriteLine(System.Environment.NewLine);
-
-
-Console.WriteLine("================================================================================");
-Console.WriteLine("================================================================================");
-
-IEnumerable<Student> studentQuery =
-    from student in students
-    where student.Scores[0] > 90 && student.Scores[3] < 80
-    select student;
-
-
-// full name (first + last name) score[0] == 97
-string FullName = string.Empty;
-
-var query =
-    from student in students
-    where student.Scores[0] == 97
-    select $"{student.First} {student.Last}";
-
-foreach(string Q in query)
+var flights = new List<Flight>
 {
-    Console.WriteLine(Q);
-}
+    new Flight { FlightId = 1, Airline = "Delta", Origin = "JFK", Price = 320 },
+    new Flight { FlightId = 2, Airline = "Delta", Origin = "LAX", Price = 280 },
+    new Flight { FlightId = 3, Airline = "Delta", Origin = "SEA", Price = 210 },
 
+    new Flight { FlightId = 4, Airline = "United", Origin = "JFK", Price = 300 },
+    new Flight { FlightId = 5, Airline = "United", Origin = "ORD", Price = 260 },
+    new Flight { FlightId = 6, Airline = "United", Origin = "LAX", Price = 340 },
+
+    new Flight { FlightId = 7, Airline = "American", Origin = "JFK", Price = 290 },
+    new Flight { FlightId = 8, Airline = "American", Origin = "DFW", Price = 230 },
+    new Flight { FlightId = 9, Airline = "American", Origin = "LAX", Price = 310 },
+
+    new Flight { FlightId = 10, Airline = "Emirates", Origin = "DXB", Price = 900 },
+    new Flight { FlightId = 11, Airline = "Emirates", Origin = "DXB", Price = 880 },
+    new Flight { FlightId = 12, Airline = "Emirates", Origin = "DXB", Price = 950 },
+
+    new Flight { FlightId = 13, Airline = "Lufthansa", Origin = "FRA", Price = 720 },
+    new Flight { FlightId = 14, Airline = "Lufthansa", Origin = "FRA", Price = 690 },
+    new Flight { FlightId = 15, Airline = "Lufthansa", Origin = "MUC", Price = 650 },
+
+    new Flight { FlightId = 16, Airline = "Qatar", Origin = "DOH", Price = 860 },
+    new Flight { FlightId = 17, Airline = "Qatar", Origin = "DOH", Price = 830 },
+
+    new Flight { FlightId = 18, Airline = "IndiGo", Origin = "DEL", Price = 120 },
+    new Flight { FlightId = 19, Airline = "IndiGo", Origin = "BOM", Price = 140 },
+    new Flight { FlightId = 20, Airline = "IndiGo", Origin = "BLR", Price = 130 }
+};
+
+
+
+Console.WriteLine("Flights Under 300");
 Console.WriteLine();
 
-Console.WriteLine("================================================================================");
-Console.WriteLine("================================================================================");
+var m1 = flights.Where(f => f.Price <= 300);
 
-
-foreach (Student student in studentQuery)
+foreach (var item in m1)
 {
-    Console.WriteLine($"{student.Last}, {student.First}");
+    Console.WriteLine($"{item.FlightId} {item.Airline}  {item.Origin}  {item.Price}");
 }
 
 
+Console.WriteLine("====================================================================");
+Console.WriteLine("Flights Above 300");
+Console.WriteLine();
+var q1 = from f in flights
+         where f.Price > 300
+         select f;
+
+foreach(var item in q1)
+{
+    Console.WriteLine($"{item.FlightId} {item.Airline}  {item.Origin}  {item.Price}");
+}
+
+
+Console.WriteLine("====================================================================");
+Console.WriteLine("All Airline with Price");
 Console.WriteLine();
 
-Console.WriteLine("================================================================================");
-Console.WriteLine("================================================================================");
 
+var m2 = flights.Select(f => new { f.Airline, f.Price });
 
-int[] scores = [45, 85, 24, 90, 49, 98];
-
-IEnumerable<int> Query =
-    from score  in scores
-    orderby score descending
-    select score;
-
-
-foreach (int score in Query)
+foreach(var item in m2)
 {
-    Console.WriteLine(score);
+    Console.WriteLine($" {item.Airline}  {item.Price}");
 }
 
 
+Console.WriteLine("====================================================================");
+Console.WriteLine("Flight ID and Origin of Indigo Airline");
 Console.WriteLine();
 
-Console.WriteLine("================================================================================");
-Console.WriteLine("================================================================================");
 
+var q2 = from f in flights
+         where f.Airline == "IndiGo"
+         select new { f.FlightId, f.Origin };
 
-
-int[] numbers = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,35,63,94,27,56];
-
-//Query syntax:
-IEnumerable<int> numQuery1 =
-    from num in numbers
-    where num % 2 == 0
-    orderby num
-    select num;
-
-//Method syntax:
-IEnumerable<int> numQuery2 = numbers
-    .Where(num => num % 2 == 0)
-    .OrderBy(n => n);
-
-foreach (int i in numQuery1)
+foreach (var item in q2)
 {
-    Console.Write(i + " ");
-}
-Console.WriteLine(System.Environment.NewLine);
-foreach (int i in numQuery2)
-{
-    Console.Write(i + " ");
+    Console.WriteLine($"{item.FlightId}   {item.Origin} ");
 }
 
+
+
+Console.WriteLine("====================================================================");
+Console.WriteLine("Sorted Flights By Price");
 Console.WriteLine();
-Console.WriteLine("================================================================================");
-Console.WriteLine("================================================================================");
 
-List<int> numbers1 = [5, 4, 1, 3, 9, 8, 6, 7, 2, 0];
-List<int> numbers2 = [15, 14, 11, 13, 19, 18, 16, 17, 12, 10];
+var m3 = flights.OrderBy(f => f.Price);
 
-double average = numbers1.Average();
+foreach (var item in m3)
+{
+    Console.WriteLine($"{item.FlightId} {item.Airline}  {item.Origin}  {item.Price}");
+}
 
-IEnumerable<int> concatenationQuery = numbers1.Concat(numbers2);
+Console.WriteLine("====================================================================");
+Console.WriteLine("Sorted Flights By Price Descending");
+Console.WriteLine();
 
-Console.WriteLine($"Average : {average}");
+
+var q3 = from f in flights
+         orderby f.Price descending
+         select f;
+
+foreach (var item in q3)
+{
+    Console.WriteLine($"{item.FlightId} {item.Airline}  {item.Origin}  {item.Price}");
+}
+
+
+Console.WriteLine("====================================================================");
+Console.WriteLine("Flights group By Airline");
+Console.WriteLine();
+
+
+var m4 = flights.GroupBy(f => f.Airline);
+
+
+foreach (var group in m4)
+{
+    Console.WriteLine();
+
+    Console.WriteLine($"Airline: {group.Key}");
+
+    foreach (var flight in group)
+    {
+        Console.WriteLine($"{flight.FlightId}   {flight.Origin}  {flight.Price}");
+        Console.WriteLine();
+    }
+}
+
+
+
+
+Console.WriteLine("====================================================================");
+Console.WriteLine("Distinct Airline");
+Console.WriteLine();
+
+
+var m5 = flights.ToList().Select(f => f.Airline).Distinct();
+
+foreach (var item in m5)
+{
+    Console.WriteLine(item);
+}
+
 
