@@ -1,0 +1,38 @@
+﻿@{
+    ViewData["Title"] = "Dashboard";
+}
+
+<h2>Dashboard</h2>
+
+<div class="alert alert-success">
+    Welcome, <b>@User.Identity?.Name</b>
+</div>
+
+<div class="card mb-3">
+    <div class="card-body">
+        <h5 class="card-title">User Options</h5>
+        <p class="card-text">These options are available for all logged-in users.</p>
+
+        <a class="btn btn-primary" asp-controller="Home" asp-action="Index">Go Home</a>
+    </div>
+</div>
+
+@if (User.IsInRole("Admin"))
+{
+    <div class="card border-danger">
+        <div class="card-body">
+            <h5 class="card-title text-danger">Admin Options</h5>
+            <p class="card-text">These options are only visible to Admin users.</p>
+
+            <a class="btn btn-danger" asp-controller="AdminUsers" asp-action="Index">
+                Manage Users
+            </a>
+        </div>
+    </div>
+}
+else
+{
+    <div class="alert alert-warning mt-3">
+        You are logged in as <b>non-admin</b>. Admin options are hidden.
+    </div>
+}

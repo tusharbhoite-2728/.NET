@@ -1,0 +1,35 @@
+﻿@model List<IdentityMVCApp.Models.ApplicationUser>
+
+@{
+    ViewData["Title"] = "Users";
+}
+
+<h2>Users</h2>
+
+<a class="btn btn-success mb-3" asp-action="Create">Add User</a>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>UserName</th>
+            <th>Email</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th style="width:140px;">Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var u in Model)
+        {
+            <tr>
+                <td>@u.UserName</td>
+                <td>@u.Email</td>
+                <td>@u.FirstName @u.LastName</td>
+                <td>@u.age</td>
+                <td>
+                    <a class="btn btn-primary btn-sm" asp-action="Edit" asp-route-id="@u.Id">Edit</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
