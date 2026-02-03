@@ -196,3 +196,4 @@ C:\Users\Admin\Desktop\.NET\IdentityMVCApp\obj\Debug\net10.0\refint\IdentityMVCA
 C:\Users\Admin\Desktop\.NET\IdentityMVCApp\obj\Debug\net10.0\IdentityMVCApp.pdb
 C:\Users\Admin\Desktop\.NET\IdentityMVCApp\obj\Debug\net10.0\IdentityMVCApp.genruntimeconfig.cache
 C:\Users\Admin\Desktop\.NET\IdentityMVCApp\obj\Debug\net10.0\ref\IdentityMVCApp.dll
+C:\Users\Admin\Desktop\.NET\IdentityMVCApp\bin\Debug\net10.0\Microsoft.AspNetCore.Authentication.Google.dll

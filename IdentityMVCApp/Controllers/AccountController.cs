@@ -2,6 +2,7 @@
 using IdentityMVCApp.ViewModels;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using System.Security.Claims;
 
 namespace IdentityMVCApp.Controllers
 {
@@ -121,5 +122,100 @@ namespace IdentityMVCApp.Controllers
             await _signInManager.SignOutAsync();
             return RedirectToAction("Login", "Account");
         }
+
+
+        // GET: /Account/GoogleLogin
+        [HttpGet]
+        public IActionResult GoogleLogin(string? returnUrl = null)
+        {
+            var redirectUrl = Url.Action(nameof(GoogleResponse), "Account", new { returnUrl });
+            var props = _signInManager.ConfigureExternalAuthenticationProperties("Google", redirectUrl);
+            return Challenge(props, "Google");
+        }
+
+        // GET: /Account/GoogleResponse
+        [HttpGet]
+        public async Task<IActionResult> GoogleResponse(string? returnUrl = null)
+        {
+            returnUrl ??= Url.Content("~/");
+
+            var info = await _signInManager.GetExternalLoginInfoAsync();
+            if (info == null)
+                return RedirectToAction("Login");
+
+            // If already linked, sign in directly
+            var signInResult = await _signInManager.ExternalLoginSignInAsync(
+                info.LoginProvider,
+                info.ProviderKey,
+                isPersistent: true,
+                bypassTwoFactor: true);
+
+            if (signInResult.Succeeded)
+                return LocalRedirect(returnUrl);
+
+            // Not linked yet -> create user / link user
+            var email = info.Principal.FindFirstValue(ClaimTypes.Email);
+            if (string.IsNullOrWhiteSpace(email))
+            {
+                TempData["Error"] = "Google did not provide an email.";
+                return RedirectToAction("Login");
+            }
+
+            // 1) If user exists by email, link login
+            var existingUser = await _userManager.FindByEmailAsync(email);
+            if (existingUser != null)
+            {
+                var linkResult = await _userManager.AddLoginAsync(existingUser, info);
+                if (linkResult.Succeeded)
+                {
+                    await _signInManager.SignInAsync(existingUser, isPersistent: true);
+                    return LocalRedirect(returnUrl);
+                }
+
+                foreach (var err in linkResult.Errors)
+                    ModelState.AddModelError(string.Empty, err.Description);
+
+                return View("Login", new LoginViewModel { ReturnUrl = returnUrl });
+            }
+
+            // 2) Create new user from Google data
+            var firstName = info.Principal.FindFirstValue(ClaimTypes.GivenName) ?? "";
+            var lastName = info.Principal.FindFirstValue(ClaimTypes.Surname) ?? "";
+
+            var user = new ApplicationUser
+            {
+                UserName = email,
+                Email = email,
+                EmailConfirmed = true,
+                FirstName = firstName,
+                LastName = lastName,
+                age = 18 // default value (since Google won’t send Age)
+            };
+
+            var createResult = await _userManager.CreateAsync(user);
+            if (!createResult.Succeeded)
+            {
+                foreach (var err in createResult.Errors)
+                    ModelState.AddModelError(string.Empty, err.Description);
+
+                return View("Login", new LoginViewModel { ReturnUrl = returnUrl });
+            }
+
+            var addLoginResult = await _userManager.AddLoginAsync(user, info);
+            if (!addLoginResult.Succeeded)
+            {
+                foreach (var err in addLoginResult.Errors)
+                    ModelState.AddModelError(string.Empty, err.Description);
+
+                return View("Login", new LoginViewModel { ReturnUrl = returnUrl });
+            }
+
+            // Optional: default role
+            await _userManager.AddToRoleAsync(user, "User");
+
+            await _signInManager.SignInAsync(user, isPersistent: true);
+            return LocalRedirect(returnUrl);
+        }
+
     }
 }

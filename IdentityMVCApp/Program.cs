@@ -6,6 +6,10 @@ using Microsoft.IdentityModel.Tokens;
 using IdentityMVCApp.Data;
 using IdentityMVCApp.Models;
 using IdentityMVCApp.Services;
+using System.Security.Claims;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Identity;
+
 
 namespace IdentityMVCApp
 {
@@ -68,6 +72,15 @@ namespace IdentityMVCApp
                 options.LoginPath = "/Account/Login";
                 options.AccessDeniedPath = "/Account/AccessDenied";
             });
+
+
+            builder.Services.AddAuthentication()
+            .AddGoogle(options =>
+              {
+                // Load credentials from appsettings.json
+                options.ClientId = builder.Configuration["Authentication:Google:ClientId"]!;
+                options.ClientSecret = builder.Configuration["Authentication:Google:ClientSecret"]!;
+               });
 
 
 

@@ -32,6 +32,12 @@
     <a class="btn btn-link" asp-action="Register">Create new account</a>
 </form>
 
+
+<a class="btn btn-outline-danger" asp-controller="Account" asp-action="GoogleLogin" asp-route-returnUrl="@Model.ReturnUrl">
+    Continue with Google
+</a>
+
+
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />
 }
