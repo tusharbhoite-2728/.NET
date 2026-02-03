@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\Admin\\Desktop\\.NET\\IdentityMVCApp\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{33EEEDB2-93A7-8978-E270-9843C7CBD511}|IdentityMVCApp.csproj|c:\\users\\admin\\desktop\\.net\\identitymvcapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{33EEEDB2-93A7-8978-E270-9843C7CBD511}|IdentityMVCApp.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{33EEEDB2-93A7-8978-E270-9843C7CBD511}|IdentityMVCApp.csproj|c:\\users\\admin\\desktop\\.net\\identitymvcapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{33EEEDB2-93A7-8978-E270-9843C7CBD511}|IdentityMVCApp.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -94,7 +98,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -110,7 +114,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\.NET\\IdentityMVCApp\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\.NET\\IdentityMVCApp\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-02-03T12:50:18.138Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\.NET\\IdentityMVCApp\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
@@ -118,12 +135,11 @@
               "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAB3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-02-03T09:29:40.278Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-03T09:29:40.278Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "DashboardController.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\.NET\\IdentityMVCApp\\Controllers\\DashboardController.cs",
               "RelativeDocumentMoniker": "Controllers\\DashboardController.cs",
@@ -131,12 +147,11 @@
               "RelativeToolTip": "Controllers\\DashboardController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-03T09:19:56.972Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-03T09:19:56.972Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "AdminCreateUserViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\.NET\\IdentityMVCApp\\ViewModels\\AdminCreateUserViewModel.cs",
               "RelativeDocumentMoniker": "ViewModels\\AdminCreateUserViewModel.cs",
@@ -144,25 +159,24 @@
               "RelativeToolTip": "ViewModels\\AdminCreateUserViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAABfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-03T06:13:54.863Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-03T06:13:54.863Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\.NET\\IdentityMVCApp\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\Admin\\Desktop\\.NET\\IdentityMVCApp\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAgwDYAAAA1AAAAAAAAAA==",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAgwCUAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-03T07:20:58.685Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\.NET\\IdentityMVCApp\\Views\\AdminUsers\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\AdminUsers\\Index.cshtml",
@@ -170,12 +184,11 @@
               "RelativeToolTip": "Views\\AdminUsers\\Index.cshtml",
               "ViewState": "AgIAABQAAAAAAAAAAAAgwCoAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-02-03T06:28:58.721Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-03T06:28:58.721Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "AccountController.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\.NET\\IdentityMVCApp\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
@@ -183,12 +196,11 @@
               "RelativeToolTip": "Controllers\\AccountController.cs",
               "ViewState": "AgIAAI8AAAAAAAAAAAAuwGkAAABeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-03T07:00:16.006Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-03T07:00:16.006Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "AdminUserController.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\.NET\\IdentityMVCApp\\Controllers\\AdminUserController.cs",
               "RelativeDocumentMoniker": "Controllers\\AdminUserController.cs",
@@ -196,12 +208,11 @@
               "RelativeToolTip": "Controllers\\AdminUserController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAL0AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-03T07:02:05.823Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-03T07:02:05.823Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "AdminEditUserViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\.NET\\IdentityMVCApp\\ViewModels\\AdminEditUserViewModel.cs",
               "RelativeDocumentMoniker": "ViewModels\\AdminEditUserViewModel.cs",
@@ -209,12 +220,11 @@
               "RelativeToolTip": "ViewModels\\AdminEditUserViewModel.cs",
               "ViewState": "AgIAAAcAAAAAAAAAAAA1wBsAAABfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-03T06:15:57.388Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-03T06:15:57.388Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\.NET\\IdentityMVCApp\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
@@ -222,12 +232,11 @@
               "RelativeToolTip": "Controllers\\HomeController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-03T09:20:04.83Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-03T09:20:04.83Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "IdentitySeeder.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\.NET\\IdentityMVCApp\\Services\\IdentitySeeder.cs",
               "RelativeDocumentMoniker": "Services\\IdentitySeeder.cs",
@@ -235,12 +244,11 @@
               "RelativeToolTip": "Services\\IdentitySeeder.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-03T09:21:26.534Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-03T09:21:26.534Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "_ValidationScriptsPartial.cshtml",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\.NET\\IdentityMVCApp\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
@@ -248,12 +256,11 @@
               "RelativeToolTip": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-02-03T06:31:48.845Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-03T06:31:48.845Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "RegisterViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\.NET\\IdentityMVCApp\\ViewModels\\RegisterViewModel.cs",
               "RelativeDocumentMoniker": "ViewModels\\RegisterViewModel.cs",
@@ -261,12 +268,11 @@
               "RelativeToolTip": "ViewModels\\RegisterViewModel.cs",
               "ViewState": "AgIAABIAAAAAAAAAAAAowBgAAABfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-03T06:17:09.691Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-03T06:17:09.691Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "LoginViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\.NET\\IdentityMVCApp\\ViewModels\\LoginViewModel.cs",
               "RelativeDocumentMoniker": "ViewModels\\LoginViewModel.cs",
@@ -274,12 +280,11 @@
               "RelativeToolTip": "ViewModels\\LoginViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-03T08:34:52.78Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-03T08:34:52.78Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "AdminManageUserRolesViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\.NET\\IdentityMVCApp\\ViewModels\\AdminManageUserRolesViewModel.cs",
               "RelativeDocumentMoniker": "ViewModels\\AdminManageUserRolesViewModel.cs",
@@ -287,12 +292,11 @@
               "RelativeToolTip": "ViewModels\\AdminManageUserRolesViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-03T07:05:47.296Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-03T07:05:47.296Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "ManageRoles.cshtml",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\.NET\\IdentityMVCApp\\Views\\AdminUsers\\ManageRoles.cshtml",
               "RelativeDocumentMoniker": "Views\\AdminUsers\\ManageRoles.cshtml",
@@ -300,12 +304,11 @@
               "RelativeToolTip": "Views\\AdminUsers\\ManageRoles.cshtml",
               "ViewState": "AgIAABsAAAAAAAAAAADwvzgAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-02-03T07:06:44.815Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-03T07:06:44.815Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "AccessDenied.cshtml",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\.NET\\IdentityMVCApp\\Views\\Account\\AccessDenied.cshtml",
               "RelativeDocumentMoniker": "Views\\Account\\AccessDenied.cshtml",
@@ -313,12 +316,11 @@
               "RelativeToolTip": "Views\\Account\\AccessDenied.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-02-03T06:36:36.424Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-03T06:36:36.424Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\.NET\\IdentityMVCApp\\Views\\AdminUsers\\Edit.cshtml",
               "RelativeDocumentMoniker": "Views\\AdminUsers\\Edit.cshtml",
@@ -326,12 +328,11 @@
               "RelativeToolTip": "Views\\AdminUsers\\Edit.cshtml",
               "ViewState": "AgIAAB0AAAAAAAAAAAAgwDoAAABGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-02-03T06:27:47.204Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-03T06:27:47.204Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\.NET\\IdentityMVCApp\\Views\\AdminUsers\\Create.cshtml",
               "RelativeDocumentMoniker": "Views\\AdminUsers\\Create.cshtml",
@@ -339,12 +340,11 @@
               "RelativeToolTip": "Views\\AdminUsers\\Create.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAEgAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-02-03T06:22:28.463Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-03T06:22:28.463Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "Register.cshtml",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\.NET\\IdentityMVCApp\\Views\\Account\\Register.cshtml",
               "RelativeDocumentMoniker": "Views\\Account\\Register.cshtml",
@@ -352,12 +352,11 @@
               "RelativeToolTip": "Views\\Account\\Register.cshtml",
               "ViewState": "AgIAADMAAAAAAAAAAAAAAEEAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-02-03T06:19:55.853Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-03T06:19:55.853Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "Login.cshtml",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\.NET\\IdentityMVCApp\\Views\\Account\\Login.cshtml",
               "RelativeDocumentMoniker": "Views\\Account\\Login.cshtml",
@@ -365,12 +364,11 @@
               "RelativeToolTip": "Views\\Account\\Login.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAEoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-02-03T06:18:51.333Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-03T06:18:51.333Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\.NET\\IdentityMVCApp\\Views\\Dashboard\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Dashboard\\Index.cshtml",
@@ -378,8 +376,7 @@
               "RelativeToolTip": "Views\\Dashboard\\Index.cshtml",
               "ViewState": "AgIAACoAAAAAAAAAAAAgwEIAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-02-03T06:33:13.764Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-03T06:33:13.764Z"
             }
           ]
         }
