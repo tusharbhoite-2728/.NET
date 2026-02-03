@@ -1,0 +1,31 @@
+﻿@{
+    ViewData["Title"] = "Access Denied";
+}
+
+<div class="row justify-content-center mt-5">
+    <div class="col-md-7 col-lg-6">
+        <div class="card shadow-sm border-0">
+            <div class="card-body p-4 text-center">
+                <h3 class="text-danger mb-2">Access Denied</h3>
+
+                <p class="text-muted">
+                    You do not have permission to access this page.
+                </p>
+
+                <div class="alert alert-warning">
+                    This area is restricted to <b>Admin</b> users only.
+                </div>
+
+                <div class="d-flex justify-content-center gap-2 mt-3">
+                    <a class="btn btn-primary" asp-controller="Dashboard" asp-action="Index">
+                        Go to Dashboard
+                    </a>
+
+                    <a class="btn btn-outline-secondary" asp-controller="Home" asp-action="Index">
+                        Home
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

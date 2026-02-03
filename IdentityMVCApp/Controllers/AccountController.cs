@@ -19,19 +19,23 @@ namespace IdentityMVCApp.Controllers
             _signInManager = signInManager;
         }
 
-        // GET: /Account/Register
+        // ---------------- REGISTER ----------------
+
         [HttpGet]
         public IActionResult Register()
         {
             return View();
         }
 
-        // POST: /Account/Register
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Register(RegisterViewModel model)
         {
-            if (!ModelState.IsValid) return View(model);
+            if (!ModelState.IsValid)
+            {
+                TempData["ToastError"] = "Please fix the validation errors.";
+                return View(model);
+            }
 
             var user = new ApplicationUser
             {
@@ -48,17 +52,20 @@ namespace IdentityMVCApp.Controllers
             {
                 await _userManager.AddToRoleAsync(user, "User");
                 await _signInManager.SignInAsync(user, isPersistent: true);
-                return RedirectToAction("Index", "Home");
+
+                TempData["ToastSuccess"] = "Registration successful!";
+                return RedirectToAction("Index", "Home"); // unchanged
             }
 
             foreach (var error in result.Errors)
                 ModelState.AddModelError(string.Empty, error.Description);
 
+            TempData["ToastError"] = "Registration failed.";
             return View(model);
         }
 
+        // ---------------- LOGIN ----------------
 
-        // GET: /Account/Login
         [HttpGet]
         public IActionResult Login(string? returnUrl = null)
         {
@@ -66,20 +73,22 @@ namespace IdentityMVCApp.Controllers
             return View(model);
         }
 
-        // POST: /Account/Login
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Login(LoginViewModel model)
         {
             if (!ModelState.IsValid)
+            {
+                TempData["ToastError"] = "Please enter valid credentials.";
                 return View(model);
+            }
 
             var user = await _userManager.FindByNameAsync(model.UserNameOrEmail)
                        ?? await _userManager.FindByEmailAsync(model.UserNameOrEmail);
 
             if (user == null)
             {
-                ModelState.AddModelError(string.Empty, "Invalid login attempt.");
+                TempData["ToastError"] = "Invalid username/email or password.";
                 return View(model);
             }
 
@@ -92,39 +101,39 @@ namespace IdentityMVCApp.Controllers
 
             if (result.Succeeded)
             {
-                // 🔴 THIS IS THE KEY PART
+                TempData["ToastSuccess"] = "Login successful!";
+
                 if (!string.IsNullOrEmpty(model.ReturnUrl) && Url.IsLocalUrl(model.ReturnUrl))
                 {
                     return Redirect(model.ReturnUrl);
                 }
 
-                // Default redirect after login
-                return RedirectToAction("Index", "Dashboard");
-
+                return RedirectToAction("Index", "Dashboard"); // unchanged
             }
 
             if (result.IsLockedOut)
             {
-                ModelState.AddModelError(string.Empty, "Account is locked.");
+                TempData["ToastError"] = "Account locked due to multiple failed attempts.";
                 return View(model);
             }
 
-            ModelState.AddModelError(string.Empty, "Invalid login attempt.");
+            TempData["ToastError"] = "Invalid username/email or password.";
             return View(model);
         }
 
+        // ---------------- LOGOUT ----------------
 
-        // POST: /Account/Logout
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Logout()
         {
             await _signInManager.SignOutAsync();
+            TempData["ToastInfo"] = "You have been logged out.";
             return RedirectToAction("Login", "Account");
         }
 
+        // ---------------- GOOGLE LOGIN ----------------
 
-        // GET: /Account/GoogleLogin
         [HttpGet]
         public IActionResult GoogleLogin(string? returnUrl = null)
         {
@@ -133,7 +142,6 @@ namespace IdentityMVCApp.Controllers
             return Challenge(props, "Google");
         }
 
-        // GET: /Account/GoogleResponse
         [HttpGet]
         public async Task<IActionResult> GoogleResponse(string? returnUrl = null)
         {
@@ -141,9 +149,11 @@ namespace IdentityMVCApp.Controllers
 
             var info = await _signInManager.GetExternalLoginInfoAsync();
             if (info == null)
+            {
+                TempData["ToastError"] = "Google login failed.";
                 return RedirectToAction("Login");
+            }
 
-            // If already linked, sign in directly
             var signInResult = await _signInManager.ExternalLoginSignInAsync(
                 info.LoginProvider,
                 info.ProviderKey,
@@ -151,17 +161,18 @@ namespace IdentityMVCApp.Controllers
                 bypassTwoFactor: true);
 
             if (signInResult.Succeeded)
+            {
+                TempData["ToastSuccess"] = "Logged in with Google.";
                 return LocalRedirect(returnUrl);
+            }
 
-            // Not linked yet -> create user / link user
             var email = info.Principal.FindFirstValue(ClaimTypes.Email);
             if (string.IsNullOrWhiteSpace(email))
             {
-                TempData["Error"] = "Google did not provide an email.";
+                TempData["ToastError"] = "Google account email not found.";
                 return RedirectToAction("Login");
             }
 
-            // 1) If user exists by email, link login
             var existingUser = await _userManager.FindByEmailAsync(email);
             if (existingUser != null)
             {
@@ -169,16 +180,14 @@ namespace IdentityMVCApp.Controllers
                 if (linkResult.Succeeded)
                 {
                     await _signInManager.SignInAsync(existingUser, isPersistent: true);
+                    TempData["ToastSuccess"] = "Google account linked successfully.";
                     return LocalRedirect(returnUrl);
                 }
 
-                foreach (var err in linkResult.Errors)
-                    ModelState.AddModelError(string.Empty, err.Description);
-
+                TempData["ToastError"] = "Failed to link Google account.";
                 return View("Login", new LoginViewModel { ReturnUrl = returnUrl });
             }
 
-            // 2) Create new user from Google data
             var firstName = info.Principal.FindFirstValue(ClaimTypes.GivenName) ?? "";
             var lastName = info.Principal.FindFirstValue(ClaimTypes.Surname) ?? "";
 
@@ -189,33 +198,22 @@ namespace IdentityMVCApp.Controllers
                 EmailConfirmed = true,
                 FirstName = firstName,
                 LastName = lastName,
-                age = 18 // default value (since Google won’t send Age)
+                age = 18
             };
 
             var createResult = await _userManager.CreateAsync(user);
             if (!createResult.Succeeded)
             {
-                foreach (var err in createResult.Errors)
-                    ModelState.AddModelError(string.Empty, err.Description);
-
+                TempData["ToastError"] = "Failed to create account from Google login.";
                 return View("Login", new LoginViewModel { ReturnUrl = returnUrl });
             }
 
-            var addLoginResult = await _userManager.AddLoginAsync(user, info);
-            if (!addLoginResult.Succeeded)
-            {
-                foreach (var err in addLoginResult.Errors)
-                    ModelState.AddModelError(string.Empty, err.Description);
-
-                return View("Login", new LoginViewModel { ReturnUrl = returnUrl });
-            }
-
-            // Optional: default role
+            await _userManager.AddLoginAsync(user, info);
             await _userManager.AddToRoleAsync(user, "User");
-
             await _signInManager.SignInAsync(user, isPersistent: true);
+
+            TempData["ToastSuccess"] = "Account created using Google.";
             return LocalRedirect(returnUrl);
         }
-
     }
 }

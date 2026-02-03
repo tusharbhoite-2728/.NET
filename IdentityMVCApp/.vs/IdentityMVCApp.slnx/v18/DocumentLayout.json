@@ -3,52 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Admin\\Desktop\\.NET\\IdentityMVCApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{33EEEDB2-93A7-8978-E270-9843C7CBD511}|IdentityMVCApp.csproj|c:\\users\\admin\\desktop\\.net\\identitymvcapp\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{33EEEDB2-93A7-8978-E270-9843C7CBD511}|IdentityMVCApp.csproj|solutionrelative:controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{33EEEDB2-93A7-8978-E270-9843C7CBD511}|IdentityMVCApp.csproj|c:\\users\\admin\\desktop\\.net\\identitymvcapp\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{33EEEDB2-93A7-8978-E270-9843C7CBD511}|IdentityMVCApp.csproj|solutionrelative:views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{33EEEDB2-93A7-8978-E270-9843C7CBD511}|IdentityMVCApp.csproj|c:\\users\\admin\\desktop\\.net\\identitymvcapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{33EEEDB2-93A7-8978-E270-9843C7CBD511}|IdentityMVCApp.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{33EEEDB2-93A7-8978-E270-9843C7CBD511}|IdentityMVCApp.csproj|c:\\users\\admin\\desktop\\.net\\identitymvcapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{33EEEDB2-93A7-8978-E270-9843C7CBD511}|IdentityMVCApp.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{33EEEDB2-93A7-8978-E270-9843C7CBD511}|IdentityMVCApp.csproj|c:\\users\\admin\\desktop\\.net\\identitymvcapp\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{33EEEDB2-93A7-8978-E270-9843C7CBD511}|IdentityMVCApp.csproj|solutionrelative:services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{33EEEDB2-93A7-8978-E270-9843C7CBD511}|IdentityMVCApp.csproj|c:\\users\\admin\\desktop\\.net\\identitymvcapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{33EEEDB2-93A7-8978-E270-9843C7CBD511}|IdentityMVCApp.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{33EEEDB2-93A7-8978-E270-9843C7CBD511}|IdentityMVCApp.csproj|c:\\users\\admin\\desktop\\.net\\identitymvcapp\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{33EEEDB2-93A7-8978-E270-9843C7CBD511}|IdentityMVCApp.csproj|solutionrelative:controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{33EEEDB2-93A7-8978-E270-9843C7CBD511}|IdentityMVCApp.csproj|c:\\users\\admin\\desktop\\.net\\identitymvcapp\\services\\identityseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{33EEEDB2-93A7-8978-E270-9843C7CBD511}|IdentityMVCApp.csproj|solutionrelative:services\\identityseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{33EEEDB2-93A7-8978-E270-9843C7CBD511}|IdentityMVCApp.csproj|c:\\users\\admin\\desktop\\.net\\identitymvcapp\\controllers\\adminusercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{33EEEDB2-93A7-8978-E270-9843C7CBD511}|IdentityMVCApp.csproj|solutionrelative:controllers\\adminusercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{33EEEDB2-93A7-8978-E270-9843C7CBD511}|IdentityMVCApp.csproj|c:\\users\\admin\\desktop\\.net\\identitymvcapp\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{33EEEDB2-93A7-8978-E270-9843C7CBD511}|IdentityMVCApp.csproj|solutionrelative:views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{33EEEDB2-93A7-8978-E270-9843C7CBD511}|IdentityMVCApp.csproj|c:\\users\\admin\\desktop\\.net\\identitymvcapp\\data\\appidentitydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{33EEEDB2-93A7-8978-E270-9843C7CBD511}|IdentityMVCApp.csproj|solutionrelative:data\\appidentitydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{33EEEDB2-93A7-8978-E270-9843C7CBD511}|IdentityMVCApp.csproj|c:\\users\\admin\\desktop\\.net\\identitymvcapp\\viewmodels\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{33EEEDB2-93A7-8978-E270-9843C7CBD511}|IdentityMVCApp.csproj|solutionrelative:viewmodels\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{33EEEDB2-93A7-8978-E270-9843C7CBD511}|IdentityMVCApp.csproj|c:\\users\\admin\\desktop\\.net\\identitymvcapp\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{33EEEDB2-93A7-8978-E270-9843C7CBD511}|IdentityMVCApp.csproj|solutionrelative:models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{33EEEDB2-93A7-8978-E270-9843C7CBD511}|IdentityMVCApp.csproj|c:\\users\\admin\\desktop\\.net\\identitymvcapp\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33EEEDB2-93A7-8978-E270-9843C7CBD511}|IdentityMVCApp.csproj|solutionrelative:controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{33EEEDB2-93A7-8978-E270-9843C7CBD511}|IdentityMVCApp.csproj|c:\\users\\admin\\desktop\\.net\\identitymvcapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -59,36 +27,68 @@
       "RelativeMoniker": "D:0:0:{33EEEDB2-93A7-8978-E270-9843C7CBD511}|IdentityMVCApp.csproj|solutionrelative:viewmodels\\admincreateuserviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{33EEEDB2-93A7-8978-E270-9843C7CBD511}|IdentityMVCApp.csproj|c:\\users\\admin\\desktop\\.net\\identitymvcapp\\viewmodels\\adminedituserviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{33EEEDB2-93A7-8978-E270-9843C7CBD511}|IdentityMVCApp.csproj|solutionrelative:viewmodels\\adminedituserviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{33EEEDB2-93A7-8978-E270-9843C7CBD511}|IdentityMVCApp.csproj|c:\\users\\admin\\desktop\\.net\\identitymvcapp\\views\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{33EEEDB2-93A7-8978-E270-9843C7CBD511}|IdentityMVCApp.csproj|solutionrelative:views\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{33EEEDB2-93A7-8978-E270-9843C7CBD511}|IdentityMVCApp.csproj|c:\\users\\admin\\desktop\\.net\\identitymvcapp\\views\\adminusers\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{33EEEDB2-93A7-8978-E270-9843C7CBD511}|IdentityMVCApp.csproj|solutionrelative:views\\adminusers\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{33EEEDB2-93A7-8978-E270-9843C7CBD511}|IdentityMVCApp.csproj|c:\\users\\admin\\desktop\\.net\\identitymvcapp\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{33EEEDB2-93A7-8978-E270-9843C7CBD511}|IdentityMVCApp.csproj|solutionrelative:controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{33EEEDB2-93A7-8978-E270-9843C7CBD511}|IdentityMVCApp.csproj|c:\\users\\admin\\desktop\\.net\\identitymvcapp\\views\\adminusers\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{33EEEDB2-93A7-8978-E270-9843C7CBD511}|IdentityMVCApp.csproj|solutionrelative:views\\adminusers\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{33EEEDB2-93A7-8978-E270-9843C7CBD511}|IdentityMVCApp.csproj|c:\\users\\admin\\desktop\\.net\\identitymvcapp\\services\\identityseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33EEEDB2-93A7-8978-E270-9843C7CBD511}|IdentityMVCApp.csproj|solutionrelative:services\\identityseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{33EEEDB2-93A7-8978-E270-9843C7CBD511}|IdentityMVCApp.csproj|c:\\users\\admin\\desktop\\.net\\identitymvcapp\\migrations\\20260202061953_addednamefields.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{33EEEDB2-93A7-8978-E270-9843C7CBD511}|IdentityMVCApp.csproj|solutionrelative:migrations\\20260202061953_addednamefields.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{33EEEDB2-93A7-8978-E270-9843C7CBD511}|IdentityMVCApp.csproj|c:\\users\\admin\\desktop\\.net\\identitymvcapp\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33EEEDB2-93A7-8978-E270-9843C7CBD511}|IdentityMVCApp.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33EEEDB2-93A7-8978-E270-9843C7CBD511}|IdentityMVCApp.csproj|c:\\users\\admin\\desktop\\.net\\identitymvcapp\\viewmodels\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33EEEDB2-93A7-8978-E270-9843C7CBD511}|IdentityMVCApp.csproj|solutionrelative:viewmodels\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33EEEDB2-93A7-8978-E270-9843C7CBD511}|IdentityMVCApp.csproj|c:\\users\\admin\\desktop\\.net\\identitymvcapp\\viewmodels\\adminedituserviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33EEEDB2-93A7-8978-E270-9843C7CBD511}|IdentityMVCApp.csproj|solutionrelative:viewmodels\\adminedituserviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33EEEDB2-93A7-8978-E270-9843C7CBD511}|IdentityMVCApp.csproj|c:\\users\\admin\\desktop\\.net\\identitymvcapp\\viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33EEEDB2-93A7-8978-E270-9843C7CBD511}|IdentityMVCApp.csproj|solutionrelative:viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33EEEDB2-93A7-8978-E270-9843C7CBD511}|IdentityMVCApp.csproj|c:\\users\\admin\\desktop\\.net\\identitymvcapp\\viewmodels\\adminmanageuserrolesviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33EEEDB2-93A7-8978-E270-9843C7CBD511}|IdentityMVCApp.csproj|solutionrelative:viewmodels\\adminmanageuserrolesviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33EEEDB2-93A7-8978-E270-9843C7CBD511}|IdentityMVCApp.csproj|c:\\users\\admin\\desktop\\.net\\identitymvcapp\\views\\adminusers\\manageroles.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{33EEEDB2-93A7-8978-E270-9843C7CBD511}|IdentityMVCApp.csproj|solutionrelative:views\\adminusers\\manageroles.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33EEEDB2-93A7-8978-E270-9843C7CBD511}|IdentityMVCApp.csproj|c:\\users\\admin\\desktop\\.net\\identitymvcapp\\views\\adminusers\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{33EEEDB2-93A7-8978-E270-9843C7CBD511}|IdentityMVCApp.csproj|solutionrelative:views\\adminusers\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{33EEEDB2-93A7-8978-E270-9843C7CBD511}|IdentityMVCApp.csproj|c:\\users\\admin\\desktop\\.net\\identitymvcapp\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{33EEEDB2-93A7-8978-E270-9843C7CBD511}|IdentityMVCApp.csproj|solutionrelative:views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{33EEEDB2-93A7-8978-E270-9843C7CBD511}|IdentityMVCApp.csproj|c:\\users\\admin\\desktop\\.net\\identitymvcapp\\viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{33EEEDB2-93A7-8978-E270-9843C7CBD511}|IdentityMVCApp.csproj|solutionrelative:viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{33EEEDB2-93A7-8978-E270-9843C7CBD511}|IdentityMVCApp.csproj|c:\\users\\admin\\desktop\\.net\\identitymvcapp\\views\\adminusers\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{33EEEDB2-93A7-8978-E270-9843C7CBD511}|IdentityMVCApp.csproj|solutionrelative:views\\adminusers\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33EEEDB2-93A7-8978-E270-9843C7CBD511}|IdentityMVCApp.csproj|c:\\users\\admin\\desktop\\.net\\identitymvcapp\\views\\account\\accessdenied.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{33EEEDB2-93A7-8978-E270-9843C7CBD511}|IdentityMVCApp.csproj|solutionrelative:views\\account\\accessdenied.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33EEEDB2-93A7-8978-E270-9843C7CBD511}|IdentityMVCApp.csproj|c:\\users\\admin\\desktop\\.net\\identitymvcapp\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{33EEEDB2-93A7-8978-E270-9843C7CBD511}|IdentityMVCApp.csproj|solutionrelative:views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33EEEDB2-93A7-8978-E270-9843C7CBD511}|IdentityMVCApp.csproj|c:\\users\\admin\\desktop\\.net\\identitymvcapp\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{33EEEDB2-93A7-8978-E270-9843C7CBD511}|IdentityMVCApp.csproj|solutionrelative:views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33EEEDB2-93A7-8978-E270-9843C7CBD511}|IdentityMVCApp.csproj|c:\\users\\admin\\desktop\\.net\\identitymvcapp\\views\\adminusers\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{33EEEDB2-93A7-8978-E270-9843C7CBD511}|IdentityMVCApp.csproj|solutionrelative:views\\adminusers\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33EEEDB2-93A7-8978-E270-9843C7CBD511}|IdentityMVCApp.csproj|c:\\users\\admin\\desktop\\.net\\identitymvcapp\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{33EEEDB2-93A7-8978-E270-9843C7CBD511}|IdentityMVCApp.csproj|solutionrelative:views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -98,7 +98,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -114,210 +114,236 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\.NET\\IdentityMVCApp\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\.NET\\IdentityMVCApp\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAEwAAAAAAAAAAAAgwBQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-02T04:42:51.461Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AdminController.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\.NET\\IdentityMVCApp\\Controllers\\AdminController.cs",
-              "RelativeDocumentMoniker": "Controllers\\AdminController.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\.NET\\IdentityMVCApp\\Controllers\\AdminController.cs",
-              "RelativeToolTip": "Controllers\\AdminController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-02T06:13:17.086Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "IdentitySeeder.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\.NET\\IdentityMVCApp\\Services\\IdentitySeeder.cs",
-              "RelativeDocumentMoniker": "Services\\IdentitySeeder.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\.NET\\IdentityMVCApp\\Services\\IdentitySeeder.cs",
-              "RelativeToolTip": "Services\\IdentitySeeder.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAABNAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-02T04:45:56.372Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\.NET\\IdentityMVCApp\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\.NET\\IdentityMVCApp\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "Controllers\\AccountController.cs",
-              "ViewState": "AgIAAIYAAAAAAAAAAAAQwJwAAABIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-02T05:23:05.225Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "AdminUserController.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\.NET\\IdentityMVCApp\\Controllers\\AdminUserController.cs",
-              "RelativeDocumentMoniker": "Controllers\\AdminUserController.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\.NET\\IdentityMVCApp\\Controllers\\AdminUserController.cs",
-              "RelativeToolTip": "Controllers\\AdminUserController.cs",
-              "ViewState": "AgIAAEwAAAAAAAAAAAAqwHAAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-02T06:39:30.77Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "TokenService.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\.NET\\IdentityMVCApp\\Services\\TokenService.cs",
-              "RelativeDocumentMoniker": "Services\\TokenService.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\.NET\\IdentityMVCApp\\Services\\TokenService.cs",
-              "RelativeToolTip": "Services\\TokenService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-02T04:54:30.088Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\.NET\\IdentityMVCApp\\Views\\Account\\Login.cshtml",
-              "RelativeDocumentMoniker": "Views\\Account\\Login.cshtml",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\.NET\\IdentityMVCApp\\Views\\Account\\Login.cshtml",
-              "RelativeToolTip": "Views\\Account\\Login.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-02-02T06:04:30.349Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\.NET\\IdentityMVCApp\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
               "ToolTip": "C:\\Users\\Admin\\Desktop\\.NET\\IdentityMVCApp\\appsettings.json",
               "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAA7AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-02-02T04:38:58.46Z",
+              "WhenOpened": "2026-02-03T12:50:18.138Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\.NET\\IdentityMVCApp\\Views\\Dashboard\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Dashboard\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\.NET\\IdentityMVCApp\\Views\\Dashboard\\Index.cshtml",
-              "RelativeToolTip": "Views\\Dashboard\\Index.cshtml",
-              "ViewState": "AgIAACMAAAAAAAAAAIBJwAUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-02-02T07:07:40.232Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "AppIdentityDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\.NET\\IdentityMVCApp\\Data\\AppIdentityDbContext.cs",
-              "RelativeDocumentMoniker": "Data\\AppIdentityDbContext.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\.NET\\IdentityMVCApp\\Data\\AppIdentityDbContext.cs",
-              "RelativeToolTip": "Data\\AppIdentityDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-02T04:42:04.962Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "RegisterViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\.NET\\IdentityMVCApp\\ViewModels\\RegisterViewModel.cs",
-              "RelativeDocumentMoniker": "ViewModels\\RegisterViewModel.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\.NET\\IdentityMVCApp\\ViewModels\\RegisterViewModel.cs",
-              "RelativeToolTip": "ViewModels\\RegisterViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-02T05:59:10.443Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "ApplicationUser.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\.NET\\IdentityMVCApp\\Models\\ApplicationUser.cs",
-              "RelativeDocumentMoniker": "Models\\ApplicationUser.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\.NET\\IdentityMVCApp\\Models\\ApplicationUser.cs",
-              "RelativeToolTip": "Models\\ApplicationUser.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-02T04:40:15.83Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 4,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\.NET\\IdentityMVCApp\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
               "ToolTip": "C:\\Users\\Admin\\Desktop\\.NET\\IdentityMVCApp\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAB4AAAAAAAAAAIBJwDYAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAB3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-02-02T06:05:15.693Z",
+              "WhenOpened": "2026-02-03T09:29:40.278Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 6,
+              "Title": "DashboardController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\.NET\\IdentityMVCApp\\Controllers\\DashboardController.cs",
+              "RelativeDocumentMoniker": "Controllers\\DashboardController.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\.NET\\IdentityMVCApp\\Controllers\\DashboardController.cs",
+              "RelativeToolTip": "Controllers\\DashboardController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T09:19:56.972Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "AdminCreateUserViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\.NET\\IdentityMVCApp\\ViewModels\\AdminCreateUserViewModel.cs",
               "RelativeDocumentMoniker": "ViewModels\\AdminCreateUserViewModel.cs",
               "ToolTip": "C:\\Users\\Admin\\Desktop\\.NET\\IdentityMVCApp\\ViewModels\\AdminCreateUserViewModel.cs",
               "RelativeToolTip": "ViewModels\\AdminCreateUserViewModel.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAowBUAAAAvAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAABfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-02T06:40:30.489Z",
+              "WhenOpened": "2026-02-03T06:13:54.863Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\.NET\\IdentityMVCApp\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\.NET\\IdentityMVCApp\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAgwCUAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T07:20:58.685Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 14,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\.NET\\IdentityMVCApp\\Views\\AdminUsers\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\AdminUsers\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\.NET\\IdentityMVCApp\\Views\\AdminUsers\\Index.cshtml",
+              "RelativeToolTip": "Views\\AdminUsers\\Index.cshtml",
+              "ViewState": "AgIAABQAAAAAAAAAAAAgwCoAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-03T06:28:58.721Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\.NET\\IdentityMVCApp\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\.NET\\IdentityMVCApp\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "Controllers\\AccountController.cs",
+              "ViewState": "AgIAAI8AAAAAAAAAAAAuwGkAAABeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T07:00:16.006Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AdminUserController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\.NET\\IdentityMVCApp\\Controllers\\AdminUserController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AdminUserController.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\.NET\\IdentityMVCApp\\Controllers\\AdminUserController.cs",
+              "RelativeToolTip": "Controllers\\AdminUserController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAL0AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T07:02:05.823Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "AdminEditUserViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\.NET\\IdentityMVCApp\\ViewModels\\AdminEditUserViewModel.cs",
               "RelativeDocumentMoniker": "ViewModels\\AdminEditUserViewModel.cs",
               "ToolTip": "C:\\Users\\Admin\\Desktop\\.NET\\IdentityMVCApp\\ViewModels\\AdminEditUserViewModel.cs",
               "RelativeToolTip": "ViewModels\\AdminEditUserViewModel.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAowBYAAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAAAcAAAAAAAAAAAA1wBsAAABfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-02T06:41:18.464Z",
+              "WhenOpened": "2026-02-03T06:15:57.388Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Dashboard.cshtml",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\.NET\\IdentityMVCApp\\Views\\Dashboard.cshtml",
-              "RelativeDocumentMoniker": "Views\\Dashboard.cshtml",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\.NET\\IdentityMVCApp\\Views\\Dashboard.cshtml",
-              "RelativeToolTip": "Views\\Dashboard.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAEAAAAAAAAAA==",
+              "DocumentIndex": 8,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\.NET\\IdentityMVCApp\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\.NET\\IdentityMVCApp\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T09:20:04.83Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IdentitySeeder.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\.NET\\IdentityMVCApp\\Services\\IdentitySeeder.cs",
+              "RelativeDocumentMoniker": "Services\\IdentitySeeder.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\.NET\\IdentityMVCApp\\Services\\IdentitySeeder.cs",
+              "RelativeToolTip": "Services\\IdentitySeeder.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T09:21:26.534Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "_ValidationScriptsPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\.NET\\IdentityMVCApp\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\.NET\\IdentityMVCApp\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-02-02T06:59:47.078Z",
+              "WhenOpened": "2026-02-03T06:31:48.845Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "RegisterViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\.NET\\IdentityMVCApp\\ViewModels\\RegisterViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\RegisterViewModel.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\.NET\\IdentityMVCApp\\ViewModels\\RegisterViewModel.cs",
+              "RelativeToolTip": "ViewModels\\RegisterViewModel.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAowBgAAABfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T06:17:09.691Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "LoginViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\.NET\\IdentityMVCApp\\ViewModels\\LoginViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\LoginViewModel.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\.NET\\IdentityMVCApp\\ViewModels\\LoginViewModel.cs",
+              "RelativeToolTip": "ViewModels\\LoginViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T08:34:52.78Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AdminManageUserRolesViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\.NET\\IdentityMVCApp\\ViewModels\\AdminManageUserRolesViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\AdminManageUserRolesViewModel.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\.NET\\IdentityMVCApp\\ViewModels\\AdminManageUserRolesViewModel.cs",
+              "RelativeToolTip": "ViewModels\\AdminManageUserRolesViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T07:05:47.296Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ManageRoles.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\.NET\\IdentityMVCApp\\Views\\AdminUsers\\ManageRoles.cshtml",
+              "RelativeDocumentMoniker": "Views\\AdminUsers\\ManageRoles.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\.NET\\IdentityMVCApp\\Views\\AdminUsers\\ManageRoles.cshtml",
+              "RelativeToolTip": "Views\\AdminUsers\\ManageRoles.cshtml",
+              "ViewState": "AgIAABsAAAAAAAAAAADwvzgAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-03T07:06:44.815Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "AccessDenied.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\.NET\\IdentityMVCApp\\Views\\Account\\AccessDenied.cshtml",
+              "RelativeDocumentMoniker": "Views\\Account\\AccessDenied.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\.NET\\IdentityMVCApp\\Views\\Account\\AccessDenied.cshtml",
+              "RelativeToolTip": "Views\\Account\\AccessDenied.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-03T06:36:36.424Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\.NET\\IdentityMVCApp\\Views\\AdminUsers\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\AdminUsers\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\.NET\\IdentityMVCApp\\Views\\AdminUsers\\Edit.cshtml",
+              "RelativeToolTip": "Views\\AdminUsers\\Edit.cshtml",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAgwDoAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-03T06:27:47.204Z",
               "EditorCaption": ""
             },
             {
@@ -328,74 +354,48 @@
               "RelativeDocumentMoniker": "Views\\AdminUsers\\Create.cshtml",
               "ToolTip": "C:\\Users\\Admin\\Desktop\\.NET\\IdentityMVCApp\\Views\\AdminUsers\\Create.cshtml",
               "RelativeToolTip": "Views\\AdminUsers\\Create.cshtml",
-              "ViewState": "AgIAABUAAAAAAAAAAIBJwCYAAABCAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEgAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-02-02T06:42:50.627Z",
+              "WhenOpened": "2026-02-03T06:22:28.463Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "DashboardController.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\.NET\\IdentityMVCApp\\Controllers\\DashboardController.cs",
-              "RelativeDocumentMoniker": "Controllers\\DashboardController.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\.NET\\IdentityMVCApp\\Controllers\\DashboardController.cs",
-              "RelativeToolTip": "Controllers\\DashboardController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-02T06:12:10.637Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\.NET\\IdentityMVCApp\\Views\\AdminUsers\\Edit.cshtml",
-              "RelativeDocumentMoniker": "Views\\AdminUsers\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\.NET\\IdentityMVCApp\\Views\\AdminUsers\\Edit.cshtml",
-              "RelativeToolTip": "Views\\AdminUsers\\Edit.cshtml",
-              "ViewState": "AgIAABUAAAAAAAAAAAAswCgAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-02-02T06:43:27.475Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "20260202061953_AddedNameFields.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\.NET\\IdentityMVCApp\\Migrations\\20260202061953_AddedNameFields.cs",
-              "RelativeDocumentMoniker": "Migrations\\20260202061953_AddedNameFields.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\.NET\\IdentityMVCApp\\Migrations\\20260202061953_AddedNameFields.cs",
-              "RelativeToolTip": "Migrations\\20260202061953_AddedNameFields.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-02T06:19:53.773Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 15,
               "Title": "Register.cshtml",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\.NET\\IdentityMVCApp\\Views\\Account\\Register.cshtml",
               "RelativeDocumentMoniker": "Views\\Account\\Register.cshtml",
               "ToolTip": "C:\\Users\\Admin\\Desktop\\.NET\\IdentityMVCApp\\Views\\Account\\Register.cshtml",
               "RelativeToolTip": "Views\\Account\\Register.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAAEEAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-02-02T06:03:59.18Z",
+              "WhenOpened": "2026-02-03T06:19:55.853Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 21,
-              "Title": "LoginViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\.NET\\IdentityMVCApp\\ViewModels\\LoginViewModel.cs",
-              "RelativeDocumentMoniker": "ViewModels\\LoginViewModel.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\.NET\\IdentityMVCApp\\ViewModels\\LoginViewModel.cs",
-              "RelativeToolTip": "ViewModels\\LoginViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-02T05:59:45.052Z",
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\.NET\\IdentityMVCApp\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "Views\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\.NET\\IdentityMVCApp\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "Views\\Account\\Login.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-03T06:18:51.333Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\.NET\\IdentityMVCApp\\Views\\Dashboard\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Dashboard\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\.NET\\IdentityMVCApp\\Views\\Dashboard\\Index.cshtml",
+              "RelativeToolTip": "Views\\Dashboard\\Index.cshtml",
+              "ViewState": "AgIAACoAAAAAAAAAAAAgwEIAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-03T06:33:13.764Z",
               "EditorCaption": ""
             }
           ]

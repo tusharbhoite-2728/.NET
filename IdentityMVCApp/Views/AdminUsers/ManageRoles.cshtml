@@ -1,0 +1,68 @@
+﻿@model IdentityMVCApp.ViewModels.AdminManageUserRolesViewModel
+@{
+    ViewData["Title"] = "Manage Roles";
+}
+
+<div class="row justify-content-center mt-4">
+    <div class="col-md-10 col-lg-8">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <div>
+                <h3 class="mb-0">Manage Role</h3>
+                <div class="text-muted">
+                    User: <b>@Model.UserName</b>
+                </div>
+            </div>
+            <a class="btn btn-outline-secondary btn-sm" asp-action="Index">Back</a>
+        </div>
+
+        <div class="card shadow-sm border-0">
+            <div class="card-body p-4">
+                <form asp-action="ManageRoles" method="post">
+                    @Html.AntiForgeryToken()
+                    <input type="hidden" asp-for="UserId" />
+
+                    <div class="mb-3">
+                        <label class="form-label fw-semibold">
+                            Select exactly one role
+                        </label>
+
+                        @for (int i = 0; i < Model.Roles.Count; i++)
+                        {
+                            <div class="form-check mb-2">
+                                <!-- RADIO BUTTON -->
+                                <input class="form-check-input"
+                                       type="radio"
+                                       name="SelectedRole"
+                                       value="@Model.Roles[i].RoleName"
+                                       @(Model.Roles[i].IsSelected ? "checked" : "") />
+
+                                <label class="form-check-label">
+                                    @Model.Roles[i].RoleName
+                                </label>
+
+                                <!-- Keep hidden fields so model binding still works -->
+                                <input type="hidden" asp-for="Roles[i].RoleName" />
+                                <input type="hidden" asp-for="Roles[i].IsSelected" />
+                            </div>
+                        }
+                    </div>
+
+                    <div class="d-flex gap-2">
+                        <button class="btn btn-primary" type="submit">
+                            Save Role
+                        </button>
+                        <a class="btn btn-secondary" asp-action="Index">
+                            Cancel
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="text-muted mt-3">
+            <small>
+                Note: Only one role can be assigned. You cannot change your own role.
+            </small>
+        </div>
+    </div>
+</div>

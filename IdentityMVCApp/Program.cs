@@ -38,27 +38,10 @@ namespace IdentityMVCApp
             .AddEntityFrameworkStores<AppIdentityDbContext>()
             .AddDefaultTokenProviders();
 
-            // Add JWT (DO NOT call AddAuthentication() again in a way that overrides Identity defaults)
-            builder.Services.AddAuthentication()
-                .AddJwtBearer(JwtBearerDefaults.AuthenticationScheme, options =>
-                {
-                    options.TokenValidationParameters = new TokenValidationParameters
-                    {
-                        ValidateIssuer = true,
-                        ValidateAudience = true,
-                        ValidateLifetime = true,
-                        ValidateIssuerSigningKey = true,
-                        ValidIssuer = builder.Configuration["Jwt:Issuer"],
-                        ValidAudience = builder.Configuration["Jwt:Audience"],
-                        IssuerSigningKey = new SymmetricSecurityKey(
-                            Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]!))
-                    };
-                });
-
             builder.Services.AddAuthorization();
 
             // services
-            builder.Services.AddScoped<TokenService>();
+          
 
             builder.Services.AddAuthorization(options =>
             {
@@ -71,6 +54,14 @@ namespace IdentityMVCApp
             {
                 options.LoginPath = "/Account/Login";
                 options.AccessDeniedPath = "/Account/AccessDenied";
+
+                options.ExpireTimeSpan = TimeSpan.FromMinutes(24);
+
+                //  Do NOT extend lifetime on activity
+                options.SlidingExpiration = false;
+
+                options.Cookie.HttpOnly = true;
+                options.Cookie.IsEssential = true;
             });
 
 
